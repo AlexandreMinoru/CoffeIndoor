@@ -1,0 +1,194 @@
+/* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f0e6;
+      color: #4b3b2b;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      color: #6f4e37;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      background: #6f4e37;
+      color: #f5f0e6;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin: 0.3rem 0 0;
+      font-weight: 300;
+      font-size: 1.1rem;
+    }
+
+    /* Main content */
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    /* Form */
+    form {
+      background: #fff;
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(111, 78, 55, 0.2);
+      margin-bottom: 3rem;
+    }
+    form h2 {
+      margin-top: 0;
+      color: #6f4e37;
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem 0.75rem;
+      margin-bottom: 1rem;
+      border: 1.5px solid #d7c9b6;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.3s ease;
+    }
+    input:focus, textarea:focus {
+      border-color: #6f4e37;
+      outline: none;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    button {
+      background: #6f4e37;
+      color: #f5f0e6;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background: #5a3e2a;
+    }
+
+    /* Cafeteria list */
+    section#cafeterias {
+      background: #fff;
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(111, 78, 55, 0.2);
+    }
+    section#cafeterias h2 {
+      margin-top: 0;
+      color: #6f4e37;
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    ul.cafe-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    ul.cafe-list li {
+      border-bottom: 1px solid #d7c9b6;
+      padding: 0.75rem 0;
+    }
+    ul.cafe-list li:last-child {
+      border-bottom: none;
+    }
+    .cafe-name {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #4b3b2b;
+    }
+    .cafe-desc {
+      font-style: italic;
+      color: #7a6a5a;
+      margin-top: 0.2rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem 1rem;
+      font-size: 0.9rem;
+      color: #7a6a5a;
+      background: #f0e9dd;
+      border-top: 1px solid #d7c9b6;
+      margin-top: auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      form, section#cafeterias {
+        padding: 1rem 1.2rem;
+      }
+    }
+
+    .round-toggle {
+      min-width: 100px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid #6f4e37;
+      background-color: #f5f0e6;
+      cursor: pointer;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0.5rem;
+      user-select: none;
+      color: #4b3b2b;
+
+    }
+    .round-toggle.dark {
+      background-color: #6f4e37;
+      border-color: #4b3b2b;
+      color: white;
+    }
+    .below-header{
+        display: flex;
+        align-items:flex-end;
+        justify-content: end;
+    }
+
+    .below-header p{
+        cursor: pointer;
+    }
+
+    .marketing-button{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
