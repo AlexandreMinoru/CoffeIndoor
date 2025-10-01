@@ -474,7 +474,12 @@
       <section class="section section-sm section-first bg-default">
         <div class="container">
           <h3 class="heading-3">Nos envie sua cafeteria</h3>
-          <form class="rd-form rd-mailform form-style-1" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+          <form class="rd-form rd-mailform form-style-1" 
+      data-form-output="form-output-global" 
+      data-form-type="contact" 
+      method="post" 
+      action="rd-mailform.php"
+      enctype="multipart/form-data">
             <div class="row row-20 gutters-20">
               <div class="col-md-6 col-lg-4 oh-desktop">
                 <div class="form-wrap wow slideInDown">
@@ -484,7 +489,7 @@
               </div>
               <div class="col-md-6 col-lg-4 oh-desktop">
                 <div class="form-wrap wow slideInUp">
-                  <input class="form-input" id="contact-email-6" type="email" name="email" data-constraints="@Email @Required">
+                  <input class="form-input" id="contact-email-6" type="text" name="email" data-constraints="@Email @Required">
                   <label class="form-label" for="contact-email-6">Instagram*</label>
                 </div>
               </div>
@@ -494,7 +499,7 @@
                   <div id="upload-area">
   📷 Arraste suas fotos aqui ou clique para selecionar
 </div>
-<input type="file" id="fotos" accept="image/*" multiple style="display:none;">
+<input type="file" id="fotos" name="fotos[]" accept="image/*" multiple style="display:none;">
 
 <!-- Onde as fotos vão aparecer -->
 <div id="preview"></div>
