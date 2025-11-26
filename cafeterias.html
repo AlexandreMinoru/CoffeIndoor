@@ -16,6 +16,96 @@
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"></script>
     <![endif]-->
+
+    <style>
+      .produto-card {
+  width: 230px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.produto-imagem img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.produto-texto {
+  padding: 15px;
+  background: white;
+}
+
+.produto-texto h5 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.produto-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.produto-link:hover {
+  color: inherit;
+}
+/* ✅ ANIMAÇÃO AO ENTRAR NA TELA */
+.produto-link {
+  animation: aparecer 0.8s ease forwards;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✅ HOVER ELEGANTE */
+.produto-card {
+  width: 230px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* ✅ AO PASSAR O MOUSE */
+.produto-card:hover {
+  transform: scale(1.06);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* ✅ IMAGEM */
+.produto-imagem img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* ✅ ZOOM LEVE NA IMAGEM */
+.produto-card:hover .produto-imagem img {
+  transform: scale(1.08);
+}
+
+/* ✅ TEXTO */
+.produto-texto {
+  padding: 15px;
+  background: white;
+}
+
+    </style>
   </head>
   <body>
     <div class="preloader">
@@ -83,46 +173,7 @@
                     <div>
                       <div class="row gutters-20" data-lightgallery="group">
                         <div class="col-6">
-                          <!-- Thumbnail Creative-->
-                          <article class="thumbnail thumbnail-creative"><a href="images/project-1-1200x800-original.jpg" data-lightgallery="item">
-                              <div class="thumbnail-creative-figure"><img src="images/project-1-195x164.jpg" alt="" width="195" height="164"/>
-                              </div>
-                              <div class="thumbnail-creative-caption"><span class="icon thumbnail-creative-icon linearicons-magnifier"></span></div></a></article>
-                        </div>
-                        <div class="col-6">
-                          <!-- Thumbnail Creative-->
-                          <article class="thumbnail thumbnail-creative"><a href="images/project-2-1200x800-original.jpg" data-lightgallery="item">
-                              <div class="thumbnail-creative-figure"><img src="images/project-2-195x164.jpg" alt="" width="195" height="164"/>
-                              </div>
-                              <div class="thumbnail-creative-caption"><span class="icon thumbnail-creative-icon linearicons-magnifier"></span></div></a></article>
-                        </div>
-                        <div class="col-6">
-                          <!-- Thumbnail Creative-->
-                          <article class="thumbnail thumbnail-creative"><a href="images/project-3-1200x800-original.jpg" data-lightgallery="item">
-                              <div class="thumbnail-creative-figure"><img src="images/project-3-195x164.jpg" alt="" width="195" height="164"/>
-                              </div>
-                              <div class="thumbnail-creative-caption"><span class="icon thumbnail-creative-icon linearicons-magnifier"></span></div></a></article>
-                        </div>
-                        <div class="col-6">
-                          <!-- Thumbnail Creative-->
-                          <article class="thumbnail thumbnail-creative"><a href="images/project-4-1200x800-original.jpg" data-lightgallery="item">
-                              <div class="thumbnail-creative-figure"><img src="images/project-4-195x164.jpg" alt="" width="195" height="164"/>
-                              </div>
-                              <div class="thumbnail-creative-caption"><span class="icon thumbnail-creative-icon linearicons-magnifier"></span></div></a></article>
-                        </div>
-                        <div class="col-6">
-                          <!-- Thumbnail Creative-->
-                          <article class="thumbnail thumbnail-creative"><a href="images/project-5-1200x800-original.jpg" data-lightgallery="item">
-                              <div class="thumbnail-creative-figure"><img src="images/project-5-195x164.jpg" alt="" width="195" height="164"/>
-                              </div>
-                              <div class="thumbnail-creative-caption"><span class="icon thumbnail-creative-icon linearicons-magnifier"></span></div></a></article>
-                        </div>
-                        <div class="col-6">
-                          <!-- Thumbnail Creative-->
-                          <article class="thumbnail thumbnail-creative"><a href="images/project-6-1200x800-original.jpg" data-lightgallery="item">
-                              <div class="thumbnail-creative-figure"><img src="images/project-6-195x164.jpg" alt="" width="195" height="164"/>
-                              </div>
-                              <div class="thumbnail-creative-caption"><span class="icon thumbnail-creative-icon linearicons-magnifier"></span></div></a></article>
+                          
                         </div>
                       </div>
                     </div>
@@ -150,16 +201,28 @@
         </div>
       </section>
       <!-- Base typography-->
-      <section class="section section-sm section-first bg-default section-style-2 ">
-        <div class="container">
-          <h3 class="wow fadeInLeft">Entre em contato com a gente para enviar sua cafeteria</h3>
-        </div>
-        <div class="container">
-            <a class="button button-xl button-primary button-winona" href="contacts.html">Entre em contato</a>
-              
-              
-            </div>
-      </section>
+     <section class="section section-sm bg-default" style="display:flex; justify-content:center;">
+  
+  <a href="aromacafepage.html" class="produto-link wow fadeInUp">
+
+    <div class="produto-card">
+      
+      <!-- IMAGEM EM CIMA -->
+      <div class="produto-imagem">
+        <img src="images/backgrounds/aroma-cafe-logo.jpg" alt="Mocha Dourado">
+      </div>
+
+      <!-- TEXTO EMBAIXO -->
+      <div class="produto-texto">
+        <h5>Aroma Café</h5>
+      </div>
+
+    </div>
+
+  </a>
+
+</section>
+
 
 
       <!-- HTML Text Elements-->
@@ -224,5 +287,7 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+
+
   </body>
 </html>
