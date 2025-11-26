@@ -15268,3 +15268,9 @@ a span {
   line-height: 20px;
   text-align: center;
 }
+
+.thumbnail-mary-figure img {
+  width: 310px !important;
+  height: 400px !important;
+  object-fit: cover;
+}
